@@ -9,7 +9,6 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.ColumnConstraints?>
 <?import javafx.scene.layout.GridPane?>
-<?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.text.Font?>
 
@@ -43,20 +42,14 @@
             </Label>
             <TextField fx:id="txtId" editable="false" GridPane.columnIndex="1" />
             <TextField fx:id="txtName" GridPane.columnIndex="1" GridPane.rowIndex="1" />
-            <Label fx:id="labelErrorName" prefHeight="26.0" prefWidth="178.0" textFill="#ec0b0b" GridPane.columnIndex="2" GridPane.rowIndex="1">
+            <TextField fx:id="txtEmail" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <DatePicker fx:id="dpBirthDate" prefHeight="26.0" prefWidth="249.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <TextField fx:id="txtBaseSalary" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <ComboBox fx:id="comboBoxDepartment" prefHeight="26.0" prefWidth="199.0" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+            <Label fx:id="labelErrorName" prefHeight="26.0" prefWidth="193.0" textFill="#ec0b0b" GridPane.columnIndex="2" GridPane.rowIndex="1">
                <font>
                   <Font name="System Bold Italic" size="12.0" />
                </font></Label>
-            <HBox prefHeight="100.0" prefWidth="200.0" spacing="6.0" GridPane.columnIndex="1" GridPane.rowIndex="4">
-               <children>
-                  <TextField fx:id="txtBaseSalary" prefHeight="26.0" prefWidth="246.0" />
-               </children>
-            </HBox>
-            <Label prefHeight="18.0" prefWidth="42.0" text="Email" GridPane.rowIndex="2" />
-            <Label prefHeight="18.0" prefWidth="62.0" text="Birth Date" GridPane.rowIndex="3" />
-            <Label prefHeight="18.0" prefWidth="66.0" text="Base Salary" GridPane.rowIndex="4" />
-            <Label prefHeight="18.0" prefWidth="74.0" text="Department" GridPane.rowIndex="5" />
-            <TextField fx:id="txtEmail" GridPane.columnIndex="1" GridPane.rowIndex="2" />
             <Button fx:id="btSave" mnemonicParsing="false" onAction="#onBtSaveAction" text="Save" textFill="#181818" GridPane.columnIndex="1" GridPane.rowIndex="6">
                <font>
                   <Font name="System Bold Italic" size="12.0" />
@@ -73,11 +66,23 @@
                   <Insets left="50.0" right="30.0" />
                </GridPane.margin>
             </Button>
-            <DatePicker fx:id="dpBirthDate" prefHeight="26.0" prefWidth="249.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
-            <Label fx:id="labelErrorBaseSalary" prefHeight="18.0" prefWidth="189.0" textFill="#d90f0f" GridPane.columnIndex="2" GridPane.rowIndex="4" />
-            <Label fx:id="labelErrorEmail" prefHeight="18.0" prefWidth="191.0" textFill="#ea1515" GridPane.columnIndex="2" GridPane.rowIndex="2" />
-            <Label fx:id="labelErrorBirthDate" prefHeight="18.0" prefWidth="192.0" textFill="#d91212" GridPane.columnIndex="2" GridPane.rowIndex="3" />
-            <ComboBox fx:id="comboBoxDepartment" prefHeight="26.0" prefWidth="199.0" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+            <Label prefHeight="18.0" prefWidth="42.0" text="Email" GridPane.rowIndex="2" />
+            <Label prefHeight="18.0" prefWidth="62.0" text="Birth Date" GridPane.rowIndex="3" />
+            <Label prefHeight="18.0" prefWidth="66.0" text="Base Salary" GridPane.rowIndex="4" />
+            <Label prefHeight="18.0" prefWidth="74.0" text="Department" GridPane.rowIndex="5" />
+            <Label fx:id="labelErrorEmail" prefHeight="18.0" prefWidth="191.0" textFill="#ea1515" GridPane.columnIndex="2" GridPane.rowIndex="2">
+               <font>
+                  <Font name="System Bold Italic" size="12.0" />
+               </font></Label>
+            <Label fx:id="labelErrorBirthDate" prefHeight="18.0" prefWidth="192.0" textFill="#d91212" GridPane.columnIndex="2" GridPane.rowIndex="3">
+               <font>
+                  <Font name="System Bold Italic" size="12.0" />
+               </font></Label>
+            <Label fx:id="labelErrorBaseSalary" prefHeight="18.0" prefWidth="189.0" textFill="#d90f0f" GridPane.columnIndex="2" GridPane.rowIndex="4">
+               <font>
+                  <Font name="System Bold Italic" size="12.0" />
+               </font>
+            </Label>
          </children>
          <opaqueInsets>
             <Insets />
